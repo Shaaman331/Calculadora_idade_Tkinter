@@ -46,4 +46,14 @@ cal_2 = DateEntry(frame_baixo, width= 13, bg = 'darkblue', fg= cor3, borderwidth
 cal_2.place(x = 170, y=50)
 
 
+
+# Criando label anos frame baixo
+
+l_app_anos = Label(frame_baixo, text= '27', height=1, padx=0, pady=0, relief=FLAT, anchor='center',font=('Ivi 25 bold'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
+l_app_anos.place(x=50, y=125 )
+l_app_anos_nome = Label(frame_baixo, text= 'Anos', height=1, padx=0, pady=0, relief=FLAT, anchor='center',font=('Ivi 11 bold'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
+l_app_anos_nome.place(x=50, y=175 )
+
+
+
 janela.mainloop()
