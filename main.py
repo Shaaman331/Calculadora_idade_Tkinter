@@ -1,6 +1,10 @@
 from cgitb import text
 from tkinter import *
 from tkinter import ttk
+from turtle import width
+
+# Importando tkcalendar
+from tkcalendar import Calendar, DateEntry
 
 #Criar janela
 janela = Tk()
@@ -27,9 +31,19 @@ l_calculadora.place(x=0, y=30 )
 
 
 l_idade = Label(frame_cima, text= 'DE IDADE', width=11, height=1, padx=0, relief='flat',anchor='center',font=('Arial 35 bold'), bg=cor2, fg= cor4)
-l_idade.place(x=0, y=70 )
+l_idade.place(x=0, y=60)
 
+# Criando label para frames baixo
 
+l_data_inicial= Label(frame_baixo, text= 'Data inicial', height=1, padx=0, pady=0, relief=FLAT, anchor=NW,font=('Ivi 11'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
+l_data_inicial.place(x=20, y=25 )
+cal_1 = DateEntry(frame_baixo, width= 13, bg='darkblue', fg= cor3, borderwidth=2, date_patter ='mm/dd/y', y = 2021) # Largura, sombreamento, cor. borda da linha, formato de data e data inicial
+cal_1.place (x = 170, y = 30)
+
+l_data_nascimento= Label(frame_baixo, text= 'Data de nascimento', height=1, padx=0, pady=0, relief=FLAT, anchor=NW,font=('Ivi 11'), bg=cor1, fg= cor3)
+l_data_nascimento.place(x=20, y=50 )
+cal_2 = DateEntry(frame_baixo, width= 13, bg = 'darkblue', fg= cor3, borderwidth=2, data_patter = 'mm/dd/y', y = 2021) # Largura, sombreamento, cor, borda de linha, formato de data e data inicial 
+cal_2.place(x = 170, y=50)
 
 
 janela.mainloop()
