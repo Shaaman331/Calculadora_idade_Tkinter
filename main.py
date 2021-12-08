@@ -24,6 +24,15 @@ frame_cima.grid(row=0, column=0)
 frame_baixo = Frame(janela, width=300, height=300, pady=0, padx=0, relief=FLAT, bg=cor1) #Largura, altura, estilo Flat, cor 
 frame_baixo.grid(row=1, column=0)
 
+# Criar função calcular idade
+
+def calcular():
+    inicial = cal_1.get()
+    data_nascimento = cal_2.get()
+
+    print(inicial, data_nascimento)
+
+
 # Criando label para frames cima
 
 l_calculadora = Label(frame_cima, text= 'CALCULADORA', width=20, height=1, padx=5, relief=FLAT, anchor='center',font=('Ivi 15 bold'), bg=cor2, fg= cor3)
@@ -70,5 +79,7 @@ l_app_dias.place(x=200, y=125 )
 l_app_dias_nome = Label(frame_baixo, text= 'Dias', height=1, padx=0, pady=0, relief=FLAT, anchor='center',font=('Ivi 11 bold'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
 l_app_dias_nome.place(x=200, y=175 )
 
+
+calcular()
 
 janela.mainloop()
