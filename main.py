@@ -50,15 +50,25 @@ cal_2.place(x = 170, y=50)
 # Criando label anos frame baixo
 
 l_app_anos = Label(frame_baixo, text= '27', height=1, padx=0, pady=0, relief=FLAT, anchor='center',font=('Ivi 25 bold'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
-l_app_anos.place(x=50, y=125 )
+l_app_anos.place(x=30, y=125 )
 l_app_anos_nome = Label(frame_baixo, text= 'Anos', height=1, padx=0, pady=0, relief=FLAT, anchor='center',font=('Ivi 11 bold'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
-l_app_anos_nome.place(x=50, y=175 )
+l_app_anos_nome.place(x=30, y=175 )
 
 # Criando label meses frame baixo
 
 l_app_meses = Label(frame_baixo, text= '12', height=1, padx=0, pady=0, relief=FLAT, anchor='center',font=('Ivi 25 bold'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
-l_app_meses.place(x=140, y=125 )
+l_app_meses.place(x=115, y=125 )
 l_app_meses_nome = Label(frame_baixo, text= 'Meses', height=1, padx=0, pady=0, relief=FLAT, anchor='center',font=('Ivi 11 bold'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
-l_app_meses_nome.place(x=135, y=175 )
+l_app_meses_nome.place(x=115, y=175 )
+
+
+
+# Criando label dias frame baixo
+
+l_app_dias = Label(frame_baixo, text= '120', height=1, padx=0, pady=0, relief=FLAT, anchor='center',font=('Ivi 25 bold'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
+l_app_dias.place(x=200, y=125 )
+l_app_dias_nome = Label(frame_baixo, text= 'Dias', height=1, padx=0, pady=0, relief=FLAT, anchor='center',font=('Ivi 11 bold'), bg=cor1, fg= cor3) # Texto, altura, estilo flat, posição Norte Oeste, font, cor
+l_app_dias_nome.place(x=200, y=175 )
+
 
 janela.mainloop()
