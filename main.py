@@ -80,6 +80,10 @@ l_app_dias_nome = Label(frame_baixo, text= 'Dias', height=1, padx=0, pady=0, rel
 l_app_dias_nome.place(x=200, y=175 )
 
 
-calcular()
+# Criando botão calcular
+
+b_calculcar = Button(frame_baixo,command= calcular, text= 'Calcular',width= 15, height=1, padx=0, pady=0, relief='raised',overrelief= 'ridge' ,font=('Ivi 15 bold'), bg=cor1, fg= cor3) # Comando calcular, tamanho, texto, altura, estilo flat, posição Norte Oeste, font, cor
+b_calculcar.place(x=40, y=220 )
+
 
 janela.mainloop()
